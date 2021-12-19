@@ -40,5 +40,5 @@ hyper parameter 를 조정하는 과정에서 다음과 같은 결과를 얻을 
 최종적으로 구한 가장 높은 정확도는 위 경우에서 **0.99** 이었다. 
 (소수점 3번째 자리까지 나타내면 0.992 의 정확도를 가진다는 것을 확인할 수 있다)
 
-![accuracy99](https://user-images.githubusercontent.com/92919490/146687123-70f0125f-ba6b-41e1-ae47-88ca4829e145.png)
+![accuracy99](https://user-images.githubusercontent.com/92919490/146688336-fa4b5570-7b38-4b31-832d-778fbf9da1e1.png)
 
