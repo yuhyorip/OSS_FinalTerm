@@ -31,7 +31,8 @@ ConvergenceWarning: Liblinear failed to converge, increase the number of iterati
 tol=0.1 : 0.98 를 확인하였다. 이와 같은 정확도는 0.1 과 0.2 사이의 tol 값에서 나타났고 이후 tol 값이 증가함에 따라 정확도는 크게 낮아졌다.
 
 이후, 다른 hyper parameter 를 조정하고 서로 다르게 조합해본 결과, 
-최종적으로 tol=0.2 , fit_intercept = False , random_state = 0 , max_iter = 7500 일 때 0.99 의 정확도가 나타났다.
+최종적으로 tol=0.2 , fit_intercept = False , random_state = 0 , max_iter = 7500 일 때 0.99 의 정확도를 확인할 수 있었고,
+내가 조정한 hyper parameter 조합의 경우들 중에서는 가장 높은 값이었다.
 
 ![accuracy99](https://user-images.githubusercontent.com/92919490/146687123-70f0125f-ba6b-41e1-ae47-88ca4829e145.png)
 
