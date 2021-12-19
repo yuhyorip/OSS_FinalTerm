@@ -7,9 +7,7 @@
 나는 우선 Scikit Learn package 중에서 모든 hyper parameter 가 default 일 때, 가장 높은 정확도를 가지는 algoritym을 찾기 위해
 SVM 의 LinearSVC, KNeighborsClassifier, GaussianNB, Logistic Regression, Perceptron, 총 5가지 algorithm 의 정확도를 비교해보았다.
 
-LinearSVC 의 경우, 0.97
-
-GaussianNB 의 경우, 0.74
+LinearSVC 의 경우, 0.97 GaussianNB 의 경우, 0.74
 
 KNeighborsClassifier 의 경우, 0.69
 
@@ -29,18 +27,22 @@ ConvergenceWarning: Liblinear failed to converge, increase the number of iterati
 이를 해결하기 위해 max_iter 값을 조정하였고, max_iter 값이 약 7500 이상일 때 해당 error 가 발생하지 않음을 확인하였다.
 
 hyper parameter 를 조정하는 과정에서 다음과 같은 결과를 얻을 수 있었다.
+
   C: default 값에서 정확도 0.97 
      C=0.01 에서 0.94 이고 이보다 낮은 값은 더 낮은 정확도를 가짐 
      default 보다 높은 값에서는 정확도에 변화가 나타나지 않음
   
   tol: default 값에서 정확도 0.97
        [0.1,0.2] 에서 0.98
-다음으로는 hyper parameter tol 을 조정해보았다. tol=0.0001(default) : 정확도 0.97 을 기준으로 조금씩 값을 증가시키다
-tol=0.1 : 0.98 를 확인하였다. 이와 같은 정확도는 0.1 과 0.2 사이의 tol 값에서 나타났고 이후 tol 값이 증가함에 따라 정확도는 크게 낮아졌다.
-
-이후, 다른 hyper parameter 를 여러번 조정하고 서로 다르게 조합해본 결과, 최종적으로 
-tol=0.2 , fit_intercept = False , random_state = 0 , max_iter = 7500 일 때 0.99 의 정확도를 확인할 수 있었고,
-내가 조정한 hyper parameter 조합의 경우들 중에서는 가장 높은 값이었다. (소수점 3번째 자리까지 나타내면 0.992 의 정확도를 가진다는 것을 확인할 수 있다)
+       이보다 높은 값에서는 정확도가 크게 낮아짐
+  
+  이외의 개별 parameter 조정을 통한 유의미한 변화는 확인할 수 없었음
+  
+  여러 parameter 들을 함께 조정하는 과정에서 
+  tol=0.2 , fit_intercept = False , random_state = 0 , max_iter = 7500 일 때 0.99 의 정확도를 확인할 수 있었다.
+  
+최종적으로 구한 가장 높은 정확도는 위 경우에서 0.99 이었다. 
+(소수점 3번째 자리까지 나타내면 0.992 의 정확도를 가진다는 것을 확인할 수 있다)
 
 ![accuracy99](https://user-images.githubusercontent.com/92919490/146687123-70f0125f-ba6b-41e1-ae47-88ca4829e145.png)
 
