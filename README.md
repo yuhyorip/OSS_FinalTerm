@@ -32,5 +32,6 @@ tol=0.1 : 0.98 를 확인하였다. 이와 같은 정확도는 0.1 과 0.2 사�
 
 이후, 다른 hyper parameter 를 조정하고 서로 다르게 조합해본 결과, 
 최종적으로 tol=0.2 , fit_intercept = False , random_state = 0 , max_iter = 7500 일 때 0.99 의 정확도가 나타났다.
-![accuracy : 0.99](F:\OneDrive\OneDrive - 고려대학교\바탕 화면\joseph\대학교\오픈소스 SW\accuracy99.png)
+
+![accuracy99](https://user-images.githubusercontent.com/92919490/146687123-70f0125f-ba6b-41e1-ae47-88ca4829e145.png)
 
